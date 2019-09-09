@@ -21,7 +21,8 @@ public class FileUploadClient {
         }
 
         FilePacket filePacket = new FilePacket();
-        File file = new File("C:\\Users\\zhangji\\Desktop\\data\\client\\a.txt");
+        String pathName ="/home/eric/Downloads/download/OS/elementaryos-5.0-stable.20181016.iso";
+        File file = new File(pathName);
         String fileMd5 = file.getName();
         filePacket.setFile(file);
         filePacket.setFile_md5(fileMd5);

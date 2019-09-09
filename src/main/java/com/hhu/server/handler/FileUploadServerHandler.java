@@ -13,7 +13,7 @@ public class FileUploadServerHandler extends ChannelInboundHandlerAdapter {
 
     private int byteRead;
     private volatile int start = 0;
-    private String file_dir = "C:\\Users\\zhangji\\Desktop\\data\\server";
+    private String file_dir = "/home/eric/Downloads";
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
